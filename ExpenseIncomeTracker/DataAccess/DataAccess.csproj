@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Domain\Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Dapper" Version="2.1.66" />
+      <PackageReference Include="dbup-postgresql" Version="6.1.5" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Data\Scripts\0001CreateOperationTable.sql" />
+      <EmbeddedResource Include="Data\Scripts\0001CreateOperationTable.sql" />
+      <None Remove="Data\Scripts\0002CreateCategoryTable.sql" />
+      <EmbeddedResource Include="Data\Scripts\0002CreateCategoryTable.sql" />
+      <None Remove="Data\Scripts\0003CreateAccountTable.sql" />
+      <EmbeddedResource Include="Data\Scripts\0003CreateAccountTable.sql" />
+    </ItemGroup>
+
+</Project>
