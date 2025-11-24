@@ -16,10 +16,10 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Remove="Data\Scripts\0001CreateOperationTable.sql" />
-      <EmbeddedResource Include="Data\Scripts\0001CreateOperationTable.sql" />
-      <None Remove="Data\Scripts\0002CreateCategoryTable.sql" />
-      <EmbeddedResource Include="Data\Scripts\0002CreateCategoryTable.sql" />
+      <None Remove="Data\Scripts\0001CreateCategoryTable.sql" />
+        <EmbeddedResource Include="Data\Scripts\0001CreateCategoryTable.sql" />
+        <None Remove="Data\Scripts\0002CreateOperationTable.sql" />
+        <EmbeddedResource Include="Data\Scripts\0002CreateOperationTable.sql" />
       <None Remove="Data\Scripts\0003CreateAccountTable.sql" />
       <EmbeddedResource Include="Data\Scripts\0003CreateAccountTable.sql" />
     </ItemGroup>
